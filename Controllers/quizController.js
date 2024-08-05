@@ -40,7 +40,7 @@ const createQuiz = async (req, res, next) => {
 
             question.options = question.options.map(option => ({
                 ...option,
-                optionType: option.optionType || 'default' // Add a default optionType if it's missing
+                optionType: option.optionType || 'default' 
             }));
         }
 
